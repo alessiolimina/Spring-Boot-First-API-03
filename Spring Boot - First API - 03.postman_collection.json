@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "648f9ca7-d21b-4fbb-84ef-543d2bd55d3d",
+		"name": "Spring Boot - First API - 03",
+		"description": "Spring Boot - First API - 03",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26121086"
+	},
+	"item": [
+		{
+			"name": "Get One String",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/?string1=Alessio&string2=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						""
+					],
+					"query": [
+						{
+							"key": "string1",
+							"value": "Alessio",
+							"description": "st"
+						},
+						{
+							"key": "string2",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get One String",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/?string1=Alessio&string2=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								""
+							],
+							"query": [
+								{
+									"key": "string1",
+									"value": "Alessio",
+									"description": "string1"
+								},
+								{
+									"key": "string2",
+									"value": "",
+									"description": "empty string2 "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 15:23:59 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "printing just string1: Alessio"
+				}
+			]
+		},
+		{
+			"name": "Get Concatenated Strings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/?string1=Alessio&string2=Limina",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						""
+					],
+					"query": [
+						{
+							"key": "string1",
+							"value": "Alessio",
+							"description": "string1"
+						},
+						{
+							"key": "string2",
+							"value": "Limina",
+							"description": "string2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Concatenated Strings",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/?string1=Alessio&string2=Limina",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								""
+							],
+							"query": [
+								{
+									"key": "string1",
+									"value": "Alessio",
+									"description": "string1"
+								},
+								{
+									"key": "string2",
+									"value": "Limina",
+									"description": "string2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "14"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Apr 2023 15:25:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Alessio Limina"
+				}
+			]
+		}
+	]
+}
