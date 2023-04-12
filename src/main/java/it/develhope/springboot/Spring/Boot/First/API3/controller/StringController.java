@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class StringController {
     @GetMapping("/")
-    public String getConcatenatedStrings(@RequestParam(required = true) String string1, @RequestParam(required = false) String string2) {
-        if (string2 == null) {
-            return string1;
-        } else return string1 + string2;
+    public String getConcatenatedStrings(@RequestParam(required = true) String name, @RequestParam(required = false) String surname) {
+        if (surname.equals(null)) {
+            return name;
+        } else return name + " " + surname;
     }
 }
