@@ -7,4 +7,4 @@
 * test the API endpoint with `Postman`, executing 2 `GET` requests:
   * with just the first param
   * with both the params
-* **note for reviewers**: view `FirstApi3.postman_collection.json` in the root folder for the `Postman` calls
+
